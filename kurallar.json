@@ -1,0 +1,36 @@
+{
+  "surum": 1,
+  "aciklama": "Odak Kalkani engel kurallari. Instagram/YouTube guncellenince ID'ler degisirse buradan duzeltilir; surum numarasini artirmayi unutma.",
+  "uygulamalar": [
+    {
+      "paket": "com.instagram.android",
+      "ekran_idleri": [
+        "clips_viewer_view_pager",
+        "clips_viewer_container",
+        "clips_viewer_fragment_container"
+      ],
+      "secili_sekme_etiketleri": ["Reels"],
+      "gizle": [
+        { "id": "clips_tab" },
+        { "etiket": "Reels", "tiklanabilir_ata": true }
+      ],
+      "renk_koyu": "#000000",
+      "renk_acik": "#FFFFFF"
+    },
+    {
+      "paket": "com.google.android.youtube",
+      "ekran_idleri": [
+        "reel_recycler",
+        "reel_player_page_container",
+        "reel_watch_player",
+        "reel_watch_fragment_root"
+      ],
+      "secili_sekme_etiketleri": ["Shorts"],
+      "gizle": [
+        { "etiket": "Shorts", "tiklanabilir_ata": true }
+      ],
+      "renk_koyu": "#0F0F0F",
+      "renk_acik": "#FFFFFF"
+    }
+  ]
+}
