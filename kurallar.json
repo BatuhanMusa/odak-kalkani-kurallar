@@ -1,46 +1,52 @@
 {
-  "surum": 2,
-  "aciklama": "Odak Kalkani engel kurallari. Instagram/YouTube guncellenince ID'ler degisirse buradan duzeltilir; surum numarasini artirmayi unutma.",
+  "surum": 3,
+  "aciklama": "Odak Kalkani engel kurallari (v3: sadece view ID). Instagram/YouTube guncellenince ID'ler degisirse buradan duzeltilir; surum numarasini artirmayi unutma.",
   "uygulamalar": [
     {
       "paket": "com.instagram.android",
-      "ekran_idleri": [
+      "geri_idleri": [
         "clips_viewer_view_pager",
         "clips_viewer_container",
         "clips_viewer_fragment_container"
       ],
-      "secili_sekme_etiketleri": ["Reels"],
-      "gizle": [
+      "secili_geri_idleri": ["clips_tab"],
+      "ortuler": [
         { "id": "clips_tab", "pay_dp": -1 },
-        { "etiket": "Reels", "tiklanabilir_ata": true },
+        { "id": "profile_tab_icon_view", "etiket": "Reels" },
+        { "id": "grid_card_layout_container", "etiket": "Reels Video" },
+        { "id": "image_preview", "etiket": "Reels Video" }
+      ],
+      "paneller": [
+        {
+          "id": "android:id/list",
+          "icerir_idleri": ["reels_tray_container", "row_feed_profile_header", "video_container"],
+          "ust_sinir_idleri": ["reels_tray_container", "main_feed_action_bar"],
+          "mesaj": "Do better.",
+          "sessize_al": true
+        },
         {
           "id": "recycler_view",
-          "icerir_id": "play_count_container",
-          "ust_sinir_id": "explore_action_bar",
-          "maks_oran": 1.0,
-          "mesaj": "🛡️ Keşfet kapalı\nArama kutusu açık"
-        },
-        { "etiket": "Reels Video", "etiket_icerir": true, "tiklanabilir_ata": true, "maks_oran": 0.4 },
-        { "id": "video_container", "ata_id": "list", "maks_oran": 0.9, "mesaj": "🛡️ Reels gizlendi" }
+          "icerir_idleri": ["play_count_container"],
+          "ust_sinir_idleri": ["explore_action_bar"],
+          "mesaj": "Do better.",
+          "alt_mesaj": "Birini aramak için yukarıdaki kutu açık",
+          "sessize_al": true
+        }
       ],
       "renk_koyu": "#000000",
       "renk_acik": "#FFFFFF"
     },
     {
       "paket": "com.google.android.youtube",
-      "ekran_idleri": [
+      "geri_idleri": [
         "reel_recycler",
         "reel_player_page_container",
         "reel_watch_player",
         "reel_watch_fragment_root"
       ],
-      "secili_sekme_etiketleri": ["Shorts"],
-      "gizle": [
-        { "etiket": "Shorts", "tiklanabilir": true, "pay_dp": -1 },
-        { "etiket": "Shorts", "tiklanabilir": false, "tam_genislik": true, "pay_dp": 16, "maks_oran": 0.15 },
-        { "etiket": "kısa videoyu oynat", "etiket_icerir": true, "maks_oran": 0.4 },
-        { "etiket": "play Short", "etiket_icerir": true, "maks_oran": 0.4 }
-      ],
+      "secili_geri_idleri": [],
+      "ortuler": [],
+      "paneller": [],
       "renk_koyu": "#0F0F0F",
       "renk_acik": "#FFFFFF"
     }
