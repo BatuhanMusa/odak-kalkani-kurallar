@@ -1,5 +1,5 @@
 {
-  "surum": 1,
+  "surum": 2,
   "aciklama": "Odak Kalkani engel kurallari. Instagram/YouTube guncellenince ID'ler degisirse buradan duzeltilir; surum numarasini artirmayi unutma.",
   "uygulamalar": [
     {
@@ -11,8 +11,17 @@
       ],
       "secili_sekme_etiketleri": ["Reels"],
       "gizle": [
-        { "id": "clips_tab" },
-        { "etiket": "Reels", "tiklanabilir_ata": true }
+        { "id": "clips_tab", "pay_dp": -1 },
+        { "etiket": "Reels", "tiklanabilir_ata": true },
+        {
+          "id": "recycler_view",
+          "icerir_id": "play_count_container",
+          "ust_sinir_id": "explore_action_bar",
+          "maks_oran": 1.0,
+          "mesaj": "🛡️ Keşfet kapalı\nArama kutusu açık"
+        },
+        { "etiket": "Reels Video", "etiket_icerir": true, "tiklanabilir_ata": true, "maks_oran": 0.4 },
+        { "id": "video_container", "ata_id": "list", "maks_oran": 0.9, "mesaj": "🛡️ Reels gizlendi" }
       ],
       "renk_koyu": "#000000",
       "renk_acik": "#FFFFFF"
@@ -27,7 +36,10 @@
       ],
       "secili_sekme_etiketleri": ["Shorts"],
       "gizle": [
-        { "etiket": "Shorts", "tiklanabilir_ata": true }
+        { "etiket": "Shorts", "tiklanabilir": true, "pay_dp": -1 },
+        { "etiket": "Shorts", "tiklanabilir": false, "tam_genislik": true, "pay_dp": 16, "maks_oran": 0.15 },
+        { "etiket": "kısa videoyu oynat", "etiket_icerir": true, "maks_oran": 0.4 },
+        { "etiket": "play Short", "etiket_icerir": true, "maks_oran": 0.4 }
       ],
       "renk_koyu": "#0F0F0F",
       "renk_acik": "#FFFFFF"
